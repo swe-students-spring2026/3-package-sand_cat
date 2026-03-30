@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7b3896d602ddf973dce155e88b5196b05c20fa681f8a749b4b97bf38e020cbe1"
+            "sha256": "bfff831c16b65e030ef8760e79a31ad271565ee3d89d78ddb507ac109018b5f1"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -190,6 +190,9 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==0.22.4"
+        },
+        "exceptiongroup": {
+            "markers": "python_version < '3.11'"
         },
         "id": {
             "hashes": [
