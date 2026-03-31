@@ -12,7 +12,7 @@
 * [Hollan Yuan](https://github.com/hwyuanzi)
 * [Tuo Zhang](https://github.com/TuoZhang0902)
 * [Yecheng Yue](https://github.com/YechengYueEddy)
-
+* [Owen Zhang](https://github.com/owenzhang2004)
 ---
 
 ## Features
@@ -25,6 +25,8 @@
 | `draw_cat(style)` | ASCII cat art in different poses | `draw_cat("ninja")` |
 | `cat_energy(weather, energy_level)` | Weather + energy based fortune | `cat_energy("sunny", 8)` |
 | `cat_reaction(event, intensity)` | Dramatic reaction to coding events (1–3) | `cat_reaction("deploy", 3)` |
+| `cat_snack(snack, quantity)` | Sand cat reacts to your coding snack (1–5) | `cat_snack("coffee", 3)` |
+| `cat_tip(skill, level)` | Programming tip tailored to skill and level | `cat_tip("git", "beginner")` |
 
 ---
 
@@ -146,6 +148,42 @@ print(reaction)
 
 Valid events: `bug_fixed`, `code_review`, `deploy`, `merge_conflict`, `friday`, `monday`
 
+#### 7. `cat_snack(snack: str, quantity: int)`
+The sand cat reacts to the snack you are having during a coding session. More snacks = bigger reaction.
+
+```python
+from sandcat_fun import cat_snack
+
+reaction = cat_snack("coffee", 3)
+print(reaction)
+# "Meow! Three coffees?! The sand cat's eyes are wide with respect."
+
+reaction = cat_snack("water", 5)
+print(reaction)
+# "PURRR!! FIVE glasses of water?! The sand cat is your biggest fan!"
+```
+
+Valid snacks: `coffee`, `tea`, `chips`, `cookies`, `water`
+
+#### 8. `cat_tip(skill: str, level: str)`
+The sand cat dispenses a programming tip tailored to a specific skill and your experience level.
+
+```python
+from sandcat_fun import cat_tip
+
+tip = cat_tip("git", "beginner")
+print(tip)
+# "Purrr... tiny tip: commit early and often. Even the sand cat saves its nap spots."
+
+tip = cat_tip("debugging", "expert")
+print(tip)
+# "MROW. Reproduce before you fix. A cat never swipes at something it has not tracked first."
+```
+
+Valid skills: `git`, `debugging`, `testing`, `refactoring`, `documentation`
+
+Valid levels: `beginner`, `intermediate`, `expert`
+
 ---
 
 ## Project Structure
@@ -154,15 +192,19 @@ Valid events: `bug_fixed`, `code_review`, `deploy`, `merge_conflict`, `friday`, 
 3-package-sand_cat/
 ├── sandcat_fun/             # Main package source code
 │   ├── __init__.py          # Package exports
-│   ├── cat.py               # cat_greeting, cat_comfort, cat_fortune
+│   ├── cat.py               # cat_greeting, cat_comfort, cat_energy
 │   ├── draw.py              # draw_cat (ASCII art)
 │   ├── fortune.py           # get_fortune
-│   └── reaction.py          # cat_reaction
+│   ├── reaction.py          # cat_reaction
+│   ├── snack.py             # cat_snack
+│   └── tip.py               # cat_tip
 ├── tests/                   # Unit tests (pytest)
 │   ├── test_cat.py
 │   ├── test_draw.py
 │   ├── test_fortune.py
-│   └── test_reaction.py
+│   ├── test_reaction.py
+│   ├── test_snack.py
+│   └── test_tip.py
 ├── demo.py                  # Example program using all functions
 ├── Pipfile                  # pipenv dependency management
 ├── Pipfile.lock
