@@ -4,7 +4,7 @@
 
 **Sand Cat** is a lighthearted and fun Python package designed to bring a little bit of joy, levity, and cuteness to developers' terminals. Inspired by the adorable sand cat, this package generates ASCII cat art, delivers cute greetings, predicts fortunes, reacts dramatically to everyday programming events, and offers comforting words when you're stuck on a bug.
 
-**PyPI**: [sand-cat on PyPI](https://pypi.org/project/sand-cat/)
+**PyPI**: [sand-cat on PyPI](https://test.pypi.org/project/sand-cat/)
 
 ---
 
