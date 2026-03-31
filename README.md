@@ -46,6 +46,12 @@ from sandcat_fun import cat_greeting, draw_cat, cat_reaction, cat_energy, cat_co
 
 ---
 
+## Configuration
+
+This package does not require any environment variables, database setup, or starter data.
+There are no secret configuration files such as `.env` files required to run this project.
+The `demo.py` program runs every public function by `sandcat_fun`.
+
 ## Usage & Code Examples
 
 ### Example Program
