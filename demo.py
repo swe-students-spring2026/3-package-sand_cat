@@ -5,6 +5,8 @@ from sandcat_fun import (
     draw_cat,
     get_fortune,
     cat_reaction,
+    cat_snack,
+    cat_tip,
 )
 
 def main():
@@ -34,6 +36,18 @@ def main():
     print(cat_reaction("bug_fixed", 3))
     print()
     print(cat_reaction("monday", 2))
+    print()
+
+    print("7. Cat Snack")
+    print(cat_snack("coffee", 3))
+    print()
+    print(cat_snack("water", 5))
+    print()
+
+    print("8. Cat Tip")
+    print(cat_tip("git", "beginner"))
+    print()
+    print(cat_tip("debugging", "expert"))
     print()
 
 
