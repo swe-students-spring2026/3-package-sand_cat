@@ -32,16 +32,16 @@
 
 ## Installation
 
-To use this package in your own Python projects, install it via `pip`:
+To use this package in your own Python projects, install it via `pipenv`:
 
 ```bash
-pip install sand-cat
+pipenv install sand-cat
 ```
 
 Then import it in your code:
 
 ```python
-from sandcat_fun import cat_greeting, draw_cat, cat_reaction
+from sandcat_fun import cat_greeting, draw_cat, cat_reaction, cat_energy, cat_comfort, get_fortune
 ```
 
 ---
@@ -124,7 +124,7 @@ fortune = cat_energy("sunny", 8)
 print(fortune)
 # "This is a zoomie-powered cat fortune for a Sunny day: ..."
 
-fortune = cat_fortune("rainy", 2)
+fortune = cat_energy("rainy", 2)
 print(fortune)
 # "This is a nap-friendly cat fortune for a Rainy day: ..."
 ```
